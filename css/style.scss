@@ -1,0 +1,685 @@
+@charset "UTF-8";
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    // box-sizingの初期値はcontent-box
+    // box-sizing: content-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+// font setting
+body {
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    // font-family: sans-serif;
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 1;
+    // font-weight: 500;
+}
+
+// font setting end
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+ul,
+ol {
+    // display: flex;
+    // justify-content: space-between;
+
+    li {
+        list-style: none;
+
+        p {
+            list-style: none;
+            font-size: 16px;
+            font-weight: 500;
+            letter-spacing: -1px;
+            // list-style-position: inside;
+        }
+    }
+}
+
+.section_title {
+    p {
+        font-size: 14px;
+        list-style: 1;
+        letter-spacing: -0.4px;
+    }
+
+    h2 {
+        font-size: 24px;
+        // font-family: sans-serif;
+        // font-size: 16px;
+        letter-spacing: -0.2px;
+        line-height: 1;
+        // font-weight: 500;
+    }
+}
+
+
+
+header {
+    background-color: #ddd;
+}
+
+.header {
+    // display: none;
+    height: 100vh;
+
+    .background_hero_img {
+        width: 100%;
+        height: 100%;
+        // background-image: url(../img/bg.jpg);
+        // background-color: #ddd;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .header_side_m {
+        padding: 0 30px 0;
+
+        .header_sbs {
+            display: flex;
+            justify-content: space-between;
+
+            .header_left {
+                .header_logo {
+                    padding-top: 20px;
+
+                    img {
+                        margin: 0;
+                    }
+                }
+            }
+
+            .header_right {
+                width: 49%;
+                padding-top: 15px;
+
+                .header_menu {
+                    &_ol {
+                        display: flex;
+                        justify-content: space-between;
+                    }
+
+                    &_li {
+                        color: #fff;
+                        // color: #333;
+
+                        // padding-right: 25px;
+                        .menue {
+                            margin-top: 3px;
+                            font-size: 13px;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+
+        .main_visual_txt {
+            text-align: center;
+            margin-top: 15%;
+            color: #fff;
+
+            h1 {
+                // font-family: sans-serif;
+                font-size: 36px;
+                letter-spacing: 1px;
+                line-height: 1;
+                // font-weight: 500;
+            }
+
+            p {
+                padding-top: 20px;
+                // font-family: sans-serif;
+                font-size: 18px;
+                letter-spacing: 1px;
+                line-height: 1;
+                font-weight: 700;
+            }
+        }
+
+        .header_square {
+            margin: 277px auto 0;
+            background-color: rgba(255, 255, 255, 1);
+            width: 1180px;
+            height: 295px;
+
+            .header_card_sbs {
+                padding-top: 32px;
+                width: 995px;
+                margin: 0 auto;
+                display: flex;
+                justify-content: space-between;
+
+                .header_card {
+                    width: 227px;
+
+                    .header_card_img {
+                        width: 100%;
+                        height: 60%;
+                        height: 140px;
+                        overflow: hidden;
+                        background-color: #333;
+
+                        img {
+                            width: 100%;
+                            height: auto;
+                        }
+                    }
+
+                    .header_card_txt {
+
+                        padding-top: 15px;
+
+                        p {
+                            // font-family: sans-serif;
+                            font-size: 16px;
+                            letter-spacing: 0.4px;
+                            line-height: 1.75;
+                            font-weight: 700;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.goto {
+    color: #333;
+    background-color: #eee;
+    padding-bottom: 82px;
+
+    .section_title {
+        text-align: center;
+
+        padding-top: 93px;
+
+        h2 {
+            padding-top: 12px;
+        }
+    }
+
+    .goto_card_sbs {
+        display: flex;
+        justify-content: space-between;
+        width: 70.5%;
+        max-width: 1185px;
+        margin: 2.1% auto 0;
+
+        .goto_card {
+            width: 31.5%;
+            height: 812px;
+            // height: 80%;
+            border: 1px solid gray;
+            padding: 0.85% 1.25%;
+
+            &_no {
+                text-align: center;
+                padding-top: 3%;
+
+                p {
+                    // font-family: sans-serif;
+                    font-size: 24px;
+                    letter-spacing: 1px;
+                    line-height: 1;
+                    font-weight: 700;
+                }
+            }
+
+            &_img {
+                // display: none;
+                background-color: #333;
+                width: 100%;
+                height: 31%;
+                overflow: hidden;
+                padding-top: 4.3%;
+                // background-color: #333;
+
+                img {
+                    // display: none;
+                    width: 100%;
+                    height: auto;
+                }
+            }
+
+            .goto_tt,
+            .goto_trip_cost,
+            .goto_trip_star_list {
+                padding: 0 4.9% 0;
+            }
+
+            .goto_tt {
+                margin: 0;
+                padding-top: 40px;
+                // display: flex;
+                // .goto_trip_n {
+
+                // }
+                .goto_trip_n {
+                    h3 {
+                        // font-family: sans-serif;
+                        font-size: 16px;
+                        letter-spacing: 1px;
+                        line-height: 1;
+                        // font-weight: 500;                    
+                    }
+                }
+
+                p {
+                    // font-family: sans-serif;
+                    font-size: 16px;
+                    letter-spacing: 1px;
+                    line-height: 1;
+                    // font-weight: 500;
+                    padding: 13px 0 0 24px;
+                }
+            }
+
+            .goto_trip_cost,
+            .goto_trip_star {
+                display: flex;
+            }
+
+            .goto_trip_cost {
+                padding-top: 18%;
+            }
+
+            .cost_title {
+                width: 55%;
+            }
+
+            .cost_price {
+                width: 45%;
+            }
+
+            .goto_trip_star_list {
+                padding-top: 7px;
+            }
+
+            .goto_trip_star {
+                padding-top: 27.5px;
+            }
+
+            .goto_trip_star_title {
+                width: 55%;
+            }
+
+            .goto_trip_star_count {
+                width: 45%;
+
+                p {
+                    color: #FFBC09;
+                    // font-family: sans-serif;
+                    font-size: 24px;
+                    letter-spacing: 1px;
+                    line-height: 1;
+                    // font-weight: 500;
+                }
+            }
+
+            .goto_trip_button {
+                // margin: 0 auto;
+                text-align: center;
+                padding-top: 50px;
+
+                button {
+                    color: #fff;
+                    background-color: #2D5466;
+                    width: 205px;
+                    height: 50px;
+                    border-radius: 25px;
+                    border: none;
+                }
+            }
+        }
+    }
+}
+
+.solo_trip {
+    background-color: #B4D7E8;
+    height: 260px;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+
+    .section_title {
+        padding-top: 95px;
+
+        p {
+            // font-family: sans-serif;
+            font-size: 14px;
+            letter-spacing: 1px;
+            line-height: 1;
+            font-weight: 700;
+        }
+
+        h3 {
+            padding-top: 9px;
+
+            // font-family: sans-serif;
+            font-size: 24px;
+            letter-spacing: -0.6px;
+            line-height: 1;
+            // font-weight: 500;
+        }
+
+    }
+
+    .border_line {
+        border: 1.5px solid #fff;
+        width: 60px;
+        height: 1.5px;
+        margin: 19px auto 0;
+    }
+
+}
+
+.good_osusume {
+    .section_sub_title {
+        text-align: center;
+        padding-top: 97px;
+
+        p {
+            // font-family: sans-serif;
+            font-size: 15px;
+            letter-spacing: 0.6px;
+            line-height: 1.8;
+            // font-weight: 500;
+        }
+    }
+
+    .goc_sbs {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 1185px;
+        margin: 50px auto 0;
+
+        .good_osusume_card {
+            // padding: 0;
+            width: 374px;
+            margin: 0 0 0 31px;
+            position: relative;
+
+            &:first-child,
+            &:last-child {
+                margin: 0;
+            }
+
+            .go_card_img {
+                width: 100%;
+                height: 234px;
+                overflow: hidden;
+                background-color: #333;
+
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+
+            .go_tag {
+                position: absolute;
+                top: 13px;
+                left: 11px;
+                width: 68px;
+                height: 20px;
+
+                background-color: #E9BA3A;
+                color: #fff;
+                text-align: center;
+                padding-top: 3px;
+
+                p {
+                    // font-family: sans-serif;
+                    font-size: 12px;
+                    letter-spacing: 1px;
+                    line-height: 1;
+                    // font-weight: 500;
+                }
+            }
+        }
+
+        .go_card_title {
+            padding: 23px 3px 0;
+            // padding-right: 3px;
+
+            h4 {
+                // font-family: sans-serif;
+                font-size: 16px;
+                letter-spacing: 0.4px;
+                line-height: 1.7;
+                // font-weight: 500;
+            }
+        }
+
+        .date {
+            margin-top: 13px;
+            margin-bottom: 33px;
+
+            time {
+                margin-left: 21px;
+                // font-family: sans-serif;
+                font-size: 12px;
+                letter-spacing: 1px;
+                line-height: 1;
+                // font-weight: 500;
+            }
+        }
+    }
+
+    .good_osusume_button {
+        // margin: 0 auto;
+        text-align: center;
+        padding-bottom: 126px;
+
+        button {
+            color: #fff;
+            background-color: #2D5466;
+            width: 205px;
+            height: 50px;
+            border-radius: 25px;
+            border: none;
+        }
+    }
+}
+
+
+
+.group_osusume {
+    background-color: #B4D7E8;
+    height: 260px;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+
+    .section_title {
+        padding-top: 95px;
+
+        p {
+            // font-family: sans-serif;
+            font-size: 14px;
+            letter-spacing: 1px;
+            line-height: 1;
+            font-weight: 700;
+        }
+
+        h3 {
+            padding-top: 9px;
+
+            // font-family: sans-serif;
+            font-size: 24px;
+            letter-spacing: -0.6px;
+            line-height: 1;
+            // font-weight: 500;
+        }
+
+    }
+
+    .border_line {
+        border: 1.5px solid #fff;
+        width: 60px;
+        height: 1.5px;
+        margin: 19px auto 0;
+    }
+
+}
+
+.go_tokyo_sbs {
+    display: flex;
+
+    width: 1185px;
+    margin: 0 auto 0;
+
+    .go_tokyo_img {
+        width: 48.5%;
+        height: 383px;
+        overflow: hidden;
+        background-color: #333;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        // display: initial;
+    }
+
+    .go_tokyo_txt {
+        width: 51%;
+        text-align: initial;
+        padding: 15px 0 0 48px;
+
+        h4 {
+            padding-top: 9px;
+            // font-family: sans-serif;
+            font-size: 20px;
+            letter-spacing: 0;
+            line-height: 1;
+            font-weight: 700;
+        }
+
+        .second_p {
+            padding-top: 33px;
+        }
+    }
+}
+
+.go_tokyo_center_txt {
+    padding-top: 40px;
+}
+
+.goc_sbs.go_tokyo_sbs_s {
+    margin: 32px auto 0;
+}
+
+
+.displaynon {
+    display: none;
+}
+
+
+
+
+.areatheme {
+    text-align: center;
+    padding-top: 34px;
+
+    .section_title {
+        h3 {
+            // padding-top: 9px;
+
+            // font-family: sans-serif;
+            font-size: 24px;
+            letter-spacing: -0.6px;
+            line-height: 1;
+            // font-weight: 500;
+        }
+    }
+
+    .theme_itme_sbs {
+        display: flex;
+        width: 1185px;
+        margin: 35px auto 0;
+
+        .theme_item {
+            background-color: #2D5466;
+            width: 190px;
+            height: 95px;
+            color: #fff;
+            text-align: center;
+
+            margin-left: 10px;
+
+            &:first-child {
+                margin-left: 0;
+            }
+
+            .theme_txt {
+                padding-top: 64px;
+            }
+        }
+    }
+}
+
+.footer_one_front {
+    .footer_one_front_sbs {
+        display: flex;
+        justify-content: center;
+        padding-top: 236px;
+
+        .front_txt {
+            padding-left: 31px;
+
+            p {
+                // font-family: sans-serif;
+                font-size: 14px;
+                letter-spacing: 1px;
+                line-height: 1;
+                // font-weight: 500;
+            }
+
+            &:first-child {
+                padding-left: 0;
+            }
+        }
+    }
+}
+
+.footer {
+    background-color: #2D5466;
+    text-align: center;
+    color: #fff;
+
+    height: 44px;
+    margin-top: 15px;
+    padding-top: 16px;
+
+    p {
+        // font-family: sans-serif;
+        font-size: 14px;
+        letter-spacing: 0.7px;
+        line-height: 1;
+        // font-weight: 500;
+    }
+}
+
+img {
+    display: none;
+    background-color: #333;
+}
